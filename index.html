@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bookmark</title>
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.6.0-web/css/all.min.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./bootstrap-5.3.3-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body class="bg-warning-subtle">
+   
+<div class="text-center my-5">
+    <h1>Bookmarker</h1>
+    <hr class="nour">
+</div>
+<div><h2 class="text-success text-center fs-3 fw-bold "><i class="fa-regular fa-bookmark  "></i>Bookmark your favorite sites<i class="fa-regular fa-bookmark "></i></h2></div>
+<section class="mx-auto mt-5 w-75 fw-bold">
+    
+    
+    <label for="name"><i class="fa-solid fa-book mb-2 "></i> Sit Name</label>
+    <input id="name" type="text" class="form-control w-100 mb-3  " placeholder="Bookmark Name..">
+    <div id="mohamed" class="alert alert-danger d-none" role="alert">
+        sit name must contain at least 3 characters
+      </div>
+
+    <label for="url"> <i class="fa-solid fa-code mb-2"></i> Site URL</label>
+    <input id="url" type="text" class="form-control w-100 mb-3" placeholder="Website URL..">
+    <div id="mo" class="alert alert-danger d-none" role="alert">
+        sit URL must be a valid one
+      </div>
+
+    <DIV class="d-flex justify-content-center">
+
+        <BUtton onclick="addSite() " class="btns">submit</BUtton>
+    </DIV>
+    
+</section>
+<hr class="nour">
+<section>
+<div class="container-fluid w-75 my-5">
+    <table class="table">
+        <thead>
+            <tr>
+            <th>index</th>
+            <th>Website</th>
+            <th>Visit</th>
+            <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody id="nour">
+          <!-- <tr>
+            <td>index</td>
+            <td> mohamed </td>
+            <td><button type="button" class="btn btn-outline-warning"><a  href=""> Visit</a></button></td>
+            <td><button type="button" class="btn btn-outline-danger"><i class="fa-regular fa-trash-can"> Delete</button></td>
+          </tr> -->
+        </tbody>
+        
+    </table>
+
+</div>
+
+</section>
+
+
+
+    <script src="./bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
